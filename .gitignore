@@ -1,0 +1,18 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.kotlin/
+
+# Build outputs
+*.aab
+*.apk
+*.ap_
+*.dex
+
+# Model lớn ở models/ (vd 640m ~103MB): tải riêng, KHÔNG commit (xem models/README.txt).
+# Riêng 320n nhúng trong app/src/main/assets/ thì VẪN commit (12MB < 100MB) để build ra APK có sẵn model.
+models/*.onnx

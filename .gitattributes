@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Model nhị phân — không đụng vào EOL (tránh làm hỏng file)
+*.onnx binary
