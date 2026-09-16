@@ -1,0 +1,5 @@
+# AGP 8.12 cần JDK 17+. Chỉ build & publish module library 'nudenet' (bỏ qua app).
+jdk:
+  - openjdk17
+install:
+  - ./gradlew :nudenet:publishToMavenLocal -x lint
