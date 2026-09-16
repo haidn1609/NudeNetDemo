@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         NudeNetModel.N320 -> ModelSource(model, ModelSourceType.ASSET, model.fileName)
         NudeNetModel.M640 -> ModelSource(
             model, ModelSourceType.URL,
-           "https://github.com/notAI-tech/NudeNet/releases/download/v3.4-weights/640m.onnx"
+           "http://192.168.31.229:8080/nudenet_640m.onnx"
         )
     }
 

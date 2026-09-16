@@ -257,7 +257,6 @@ class NudeNetDetector(
         fun downloadModel(context: Context, url: String, fileName: String): String {
             val dir = File(context.filesDir, "models").apply { mkdirs() }
             val out = File(dir, fileName)
-            if (out.exists() && out.length() > 0L) return out.absolutePath // đã cache
 
             val tmp = File(dir, "$fileName.part")
             val conn = (URL(url).openConnection() as HttpURLConnection).apply {
